@@ -1,0 +1,9 @@
+<h1>ChildToParentCommunication</h1>
+
+
+<!--
+  <h1>{{childToParentData}}</h1>
+  <app-users (parentComponent)="parentCom($event)"></app-users>
+-->
+
+<app-users [count]=Counter (countChanged)="countChangedHandler($event)"></app-users>

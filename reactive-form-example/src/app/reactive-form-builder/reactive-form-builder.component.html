@@ -1,0 +1,51 @@
+<p>reactive-form-builder works!</p>
+
+<form class="form-horizontal" (ngSubmit)="submitForm()" [formGroup]="adminssionForm">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Form Name</legend>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="name">Enter Name</label>  
+      <div class="col-md-4">
+      <input id="name" name="name" type="text" placeholder="Enter Name" formControlName="name" class="form-control input-md">
+        
+      </div>
+    </div>
+    
+    <!-- Multiple Checkboxes (inline) -->
+    <div class="form-group" formGroupName="courses">
+      <label class="col-md-4 control-label" for="course">Course</label>
+      <div class="col-md-4">
+        <label class="checkbox-inline" for="course-0">
+          <input type="checkbox" name="course" id="course-0" formControlName="courseOne">
+          1
+        </label>
+        <label class="checkbox-inline" for="course-1">
+          <input type="checkbox" name="course" id="course-1" formControlName="courseTwo">
+          2
+        </label>
+        <label class="checkbox-inline" for="course-2">
+          <input type="checkbox" name="course" id="course-2" formControlName="courseThree">
+          3
+        </label>
+        <label class="checkbox-inline" for="course-3">
+          <input type="checkbox" name="course" id="course-3" formControlName="courseFour">
+          4
+        </label>
+      </div>
+    </div>
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for=""></label>
+      <div class="col-md-4">
+        <button id="" name="" class="btn btn-primary">Button</button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+    

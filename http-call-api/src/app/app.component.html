@@ -1,0 +1,16 @@
+<h1>Users Data from HTTP API call </h1>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>USERNAME</th>
+    <th>EMAIL</th>
+  </tr>
+  <tr *ngFor="let user of usersData">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+  </tr>
+</table>
